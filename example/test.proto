@@ -1,0 +1,15 @@
+// Run /usr/local/protobuf3/bin/protoc --go_out=. *.proto after editing this file.
+syntax="proto3";
+
+package example;
+
+enum Foo {
+  Undefined = 0;
+  X = 17;
+};
+
+message Test {
+  string label = 1;
+  int32 type = 2;
+  repeated int64 reps = 3;
+}
